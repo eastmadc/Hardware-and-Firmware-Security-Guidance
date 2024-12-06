@@ -102,7 +102,7 @@ Devices affected by LogoFail combine the ability for a user to set a custom boot
 Additional resources and technical details can be found [on Binarly's LogoFail website](https://www.binarly.io/logofail). LogoFail has been mitigated as of late 2024.
 
 ### 5.2. LoJax
-LoJax is a malicious modification of the legitimate anti-theft software known as LoJack. Both the malicious variant and the commercial software leverage a firmware module to establish persistence on computing devices. The legitimate commercial version installs an agent to the operating system that reports the device's location and may enable additional features such as remote disablement. The malicious variant install a malicious agent to the operating system and obeys commands from known attackers. The agent is difficult to remove because it can be restored via the persistent firmware module. Mitigation requires patches to the device firmware which became widely available in early 2019. LoJax was a particularly dangerous threat given that it could bypass UEFI Secure Boot on many systems and restore itself despite intervention from anti-malware solutions in the software environment.
+LoJax is a malicious modification of the legitimate anti-theft software known as LoJack. Both the malicious variant and the commercial software leverage a firmware module to establish persistence on computing devices. The legitimate commercial version installs an agent to the operating system that reports the device's location and may enable additional features such as remote disablement. The malicious variant installs a malicious agent to the operating system and obeys commands from known attackers. The agent is difficult to remove because it can be restored via the persistent firmware module. Mitigation requires patches to the device firmware which became widely available in early 2019. LoJax was a particularly dangerous threat given that it could bypass UEFI Secure Boot on many systems and restore itself despite intervention from anti-malware solutions in the software environment.
 
 A full description of LoJax and details about the threat [were published by ESET](https://www.welivesecurity.com/2018/09/27/lojax-first-uefi-rootkit-found-wild-courtesy-sednit-group/). LoJax has been mitigated since 2019.
 
@@ -151,7 +151,7 @@ NSA does not endorse or promote specific products. See the [National Information
 See [LICENSE](./LICENSE.md).
 
 ## 11. Contributing
-See [CONTRIBUTING](./CONTRIBUTING.md)
+See [CONTRIBUTING](./CONTRIBUTING.md).
 
 ## 12. Disclaimer
-See [DISCLAIMER](./DISCLAIMER.md).# Hardware and Firmware Security Guidance 
+See [DISCLAIMER](./DISCLAIMER.md).
