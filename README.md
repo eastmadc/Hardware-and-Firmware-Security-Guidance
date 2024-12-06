@@ -9,6 +9,7 @@
     - 3\.2\. [Firmware Configuration and Hardening](#firmware-configuration-and-hardening)
     - 3\.3\. [UEFI Secure Boot](#uefi-secure-boot)
     - 3\.4\. [Zero Trust](#zero-trust)
+    - 3\.5\. [Baseboard Management Controller](#baseboard-management-controller)
 - 4\. [Boot Vulnerabilities](#boot-vulnerabilities)
     - 4\.1\. [PKFail](#pkfail)
     - 4\.2\. [Shim Shady](#shim-shady)
@@ -60,6 +61,11 @@ NSA has published advanced guidance covering how to customize UEFI Secure Boot. 
 Zero Trust -- a modernized cybersecurity framework -- integrates visibility from multiple vantage points, makes risk-aware access decisions, and automates detection and response. Implementing this framework places network defenders in a better position to secure sensitive data, systems, applications, and services. Device security is a critical pillar of the Zero Trust model. The device pillar builds upon the procurement and acceptance testing, firmware configuration and hardening, and UEFI Secure Boot initiatives identified above by adding automated device inventory, automated scanning of hardware and firmware and software integrity, automated vulnerability and patch management, and centralized device appraisal. There are also considerations for decommissioning devices to remove provisioned and protected data from devices.
 
 Documentation regarding the Zero Trust device pillar [can be found at this NSA document](https://media.defense.gov/2023/Oct/19/2003323562/-1/-1/0/CSI-DEVICE-PILLAR-ZERO-TRUST.PDF). Additional Zero Trust resources and guidance regarding the other framework pillars [can be found via this NSA press release](https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3833594/nsas-final-zero-trust-pillar-report-outlines-how-to-achieve-faster-threat-respo/).
+
+### 3.5. Baseboard Management Controller
+Baseboard Management Controller (BMC) is an administrative capability integrated into a device's hardware and firmware. BMC enables remote management of devices within an enterprise including if the device is powered off or in a low power state. Most BMC implementations contain the same capabilities as firmware configuration interfaces while adding additional features for managing the storage drives, software images, hardware resource allocation, and network connectivity of the device. A compromise of BMC affords malicious actors persistence in a highly privileged environment. Organizations must secure BMC credentials, limit physical and remote access to BMC, and routinely update BMC firmware -- things easy to overlook.
+
+[NSA has published guidance regarding BMC](https://media.defense.gov/2023/Jun/14/2003241405/-1/-1/0/CSI_HARDEN_BMCS.PDF) and hardening methods. BMCs are most commonly found on server-class computing hardware. However, they may also be present on workstations and network infrastructure. Organizations should take steps to identify and secure all BMC resources within their networks.
 
 ## 4. Boot Vulnerabilities
 
