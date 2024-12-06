@@ -13,7 +13,7 @@
 - 4\. [Boot Vulnerabilities](#4-boot-vulnerabilities)
     - 4\.1\. [PKFail](#41-pkfail)
     - 4\.2\. [Shim Shady](#41-shim-shady)
-    - 4\.3\. [BlackLotus)](#43-BlackLotus)
+    - 4\.3\. [BlackLotus](#43-BlackLotus)
     - 4\.4\. [BootHole](#44-boothole)
     - 4\.5\. [BootKitty](#45-bootkitty)
 - 5\. [Firmware Vulnerabilities](#5-firmware-vulnerabilities)
